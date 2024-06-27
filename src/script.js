@@ -55,13 +55,7 @@ document.querySelector('button[type="submit"]')
     hideMessageAfterTimeout(successMessage)
   }, false)
 
-function showAndHideErrorMessage() {
-  const errorMessage = document.querySelector('.error')
-  errorMessage.style.display = 'block'
-  scroll(0,0)
-  hideMessageAfterTimeout(errorMessage)
-  return
-}
+
 
 function hideMessageAfterTimeout(element) {
   setTimeout(function() {
